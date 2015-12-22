@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_team_b"
+        android:id="@+id/editText"
+        android:layout_weight="0.12"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/score_text"
+        android:id="@+id/scoreTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/penalty_button"
+        android:id="@+id/penaltyButton"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conversion_button"
+        android:id="@+id/conversionButton"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/try_button"
+        android:id="@+id/tryButton"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left" />
+</LinearLayout>

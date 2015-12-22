@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TDASSIGN THREE</string>
+
+    <string name="photo_gallery_activity_name">Photo Gallery</string>
+    <string name="image_view_activity_name">ImageViewActivity</string>
+    <string name="rugby_match_activity_name">Rugby Counter</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="home_gallery_button">SCHOOL GALLERY</string>
+    <string name="home_rugby_button">RUGBY MATCH</string>
+
+    <string name="rugby_summary_button">SUMMARY</string>
+    <string name="rugby_reset_button">RESET</string>
+    <string name="rugby_email_button">EMAIL</string>
+
+    <string name="enter_team_a">Enter Team A</string>
+    <string name="enter_team_b">Enter Team B</string>
+    <string name="score_text">0</string>
+    <string name="penalty_button">+3 PENALTY</string>
+    <string name="conversion_button">+2 CONVERSION</string>
+    <string name="try_button">+5 TRY</string>
+</resources>

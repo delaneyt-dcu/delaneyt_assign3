@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_above="@+id/summaryButton"
+        android:baselineAligned="false">
+
+        <fragment android:name="com.example.delaneyt.tdassignthree.TeamAFragment"
+            android:id="@+id/teamA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_team_a" />
+
+        <fragment android:name="com.example.delaneyt.tdassignthree.TeamBFragment"
+            android:id="@+id/teamB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_team_b" />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rugby_reset_button"
+        android:id="@+id/resetButton"
+        android:layout_alignTop="@+id/summaryButton"
+        android:layout_toLeftOf="@+id/summaryButton"
+        android:layout_toStartOf="@+id/summaryButton"
+        android:minWidth="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rugby_summary_button"
+        android:id="@+id/summaryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:minWidth="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rugby_email_button"
+        android:id="@+id/emailButton"
+        android:layout_alignTop="@+id/summaryButton"
+        android:layout_toRightOf="@+id/summaryButton"
+        android:layout_toEndOf="@+id/summaryButton"
+        android:minWidth="100dp" />
+
+</RelativeLayout>
